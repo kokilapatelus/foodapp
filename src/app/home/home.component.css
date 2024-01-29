@@ -1,0 +1,38 @@
+ul{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0px;
+    list-style-type: none;
+
+}
+li a {
+    height:26rem;
+    width:20rem;
+    border: 1px solid whitesmoke;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    color:#e72929;
+}
+li a:hover{
+    cursor: pointer;
+    opacity: 0.7;
+}
+.content{
+   padding: .8rem 1rem;
+   position: relative;
+   height: 7rem;
+}
+.content div{
+    padding:.25
+    rem;
+}
+
+.favourite{
+    position: absolute;
+    top:0.5rem;
+    right:1rem;
+    font-size: 1.2rem;
+}
