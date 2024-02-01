@@ -6,7 +6,10 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
 import { StarRatingComponent } from './compoenent/partial/star-rating/star-rating.component';
-
+import { SearchComponent } from './search/search.component';
+import { FormsModule } from '@angular/forms';
+import { TagsComponent } from './tags/tags.component';
+import { FoodPageComponent } from './food-page/food-page.component';
 
 @NgModule({
   declarations: [
@@ -14,14 +17,17 @@ import { StarRatingComponent } from './compoenent/partial/star-rating/star-ratin
     HeaderComponent,
     HomeComponent,
     StarRatingComponent,
+    SearchComponent,
+    TagsComponent,
+    FoodPageComponent,
     
     
      
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
-   
+    AppRoutingModule,
+    FormsModule
     
   ],
   providers: [],

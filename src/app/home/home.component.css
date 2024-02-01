@@ -6,7 +6,7 @@ ul{
     list-style-type: none;
 
 }
-li a {
+ul li a {
     height:26rem;
     width:20rem;
     border: 1px solid whitesmoke;
@@ -26,8 +26,8 @@ li a:hover{
    height: 7rem;
 }
 .content div{
-    padding:.25
-    rem;
+    padding:.25rem;
+    
 }
 
 .favourite{
@@ -35,4 +35,29 @@ li a:hover{
     top:0.5rem;
     right:1rem;
     font-size: 1.2rem;
+}
+.favourite.not{
+    color:grey
+}
+.origin {
+    flex:9;
+    margin-top:0.7rem;
+}
+.origin span{
+    border-radius:2rem;
+    background-color: whitesmoke;
+    display: inline-block;
+    font-size:.7rem;
+    color:grey;
+    margin-right:.3rem;
+}
+.cook-time{
+    font-size: .8rem;
+    flex:3 !important;
+    text-align: right; 
+}
+.price{
+    color:#414141;
+    margin-top:.7rem;
+
 }

@@ -10,13 +10,18 @@ export class StarRatingComponent {
   @Input()
   stars!:number;
   @Input()
-  size: number =1;
-
+  sizes: number =1;
+ @Input()
+ totalstars!:number
+ @Input()
+ value!:number
+ @Input()
+ readonly:boolean = false;
   get styles(){
     return{
-      'width.rem': this.size,
-      'height.rem': this.size,
-      'marginRight.rem': this.size/6,
+      'width.rem': this.sizes,
+      'height.rem': this.sizes,
+      'marginRight.rem': this.sizes/6,
     }
   }
   getStarImage(current: number) : string{

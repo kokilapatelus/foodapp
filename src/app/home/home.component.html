@@ -1,6 +1,8 @@
+<app-search></app-search>
+<app-tags></app-tags>
 <ul>
     <li *ngFor="let food of foods">
-        <a>
+        <a routerLink="/food/{{food.id}}">
             <img src="{{food.imageUrl}}" alt="">
             <div class="content">
                 <div class="name">
@@ -10,7 +12,10 @@
                         ❤
                 </span>
                 <div class="stars">
-                    <star-rating [stars]="food.stars"/>
+                    <star-rating 
+                    [stars]="food.stars">
+                   
+                    </star-rating>
                 </div>
                 <div class="product-item-footer">
                     <div class="origins">
